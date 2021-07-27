@@ -147,7 +147,7 @@ int main(int argc, char** argv)
     std::string inputImageTopic, leftOutputImageTopic, rightOutputImageTopic,
         leftCameraInfoTopic, rightCameraInfoTopic;
     nh.param("input_image_topic", inputImageTopic, 
-        std::string("input_image_topic_not_set"));
+        std::string("/camera/image_raw"));
     ROS_INFO("input topic to stereo splitter=%s\n", inputImageTopic.c_str());
     nh.param("left_output_image_topic", leftOutputImageTopic,
         std::string("/sxs_stereo/left/image_raw"));
