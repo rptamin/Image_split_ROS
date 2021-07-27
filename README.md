@@ -32,3 +32,4 @@ License
 -------
 
 MIT
+Original Author: Dave B. Curtis
